@@ -58,7 +58,7 @@ const ONBOARDING_JSON = `{
     "services": {
       "type": "array",
       "required": false,
-      "description": "List of services offered. If empty, a default 'Servicio General' is created.",
+      "description": "List of services offered. If empty, a default 'General Service' is created.",
       "items": {
         "name": { "type": "string", "required": true, "description": "Service name" },
         "duration_minutes": { "type": "integer", "required": true, "description": "How long the service takes in minutes" },
@@ -81,7 +81,7 @@ const ONBOARDING_JSON = `{
     }
   },
   "completion": {
-    "message_template": "¡Listo! Tu agenda ya está creada 🎉 Podés verla acá: {url}",
+    "message_template": "All set! Your schedule has been created 🎉 View it here: {url}",
     "response_fields": ["url", "slug", "agendaId"]
   },
   "webhook": {

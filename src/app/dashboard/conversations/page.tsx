@@ -92,7 +92,7 @@ function capitalize(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
-const arsFormatter = new Intl.NumberFormat("es-AR", {
+const arsFormatter = new Intl.NumberFormat("en-US", {
   style: "currency",
   currency: "ARS",
   minimumFractionDigits: 0,
