@@ -55,6 +55,7 @@ export default function LoginPage() {
             <Input
               id="email"
               type="email"
+              autoComplete="off"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -67,6 +68,7 @@ export default function LoginPage() {
             <Input
               id="password"
               type="password"
+              autoComplete="off"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
